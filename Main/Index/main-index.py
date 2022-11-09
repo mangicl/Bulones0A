@@ -11,6 +11,7 @@ from ast import While
 from cgitb import reset
 from operator import concat
 from tkinter import N, Y
+import Calendario
 
 #main - resources
 
@@ -20,9 +21,9 @@ paso = 1, 1.25, 1.5, 2, 2.25, 3, 3.5, 4, 4.5, 5, 5.5, 6
 
 largo = 1/4, 1/2, 3/4, 1
 
-rosca = "rosca izquierda", "rosca derecha"
+rosca = "izquierda", "derecha"
 
-cantidad = "cant1 por unidad", "cant2 por kilogramos"
+cantidad = "unidad", "kilo"
 
 #index
 
@@ -71,7 +72,7 @@ while True:
 
 while True:
     rosca = input("Indique tipo de rosca")
-    if rosca != "rosca izquierda":
+    if rosca != "derecha":
         print("Indique un tipo de rosca valido")
     else:
         print("Bien")
@@ -79,8 +80,8 @@ while True:
     continue
 
 while True:
-    cantidad = input("Indique la cantidad")
-    if cantidad != "cant1 por unidad":
+    cantidad = input("Indique la cantidad (unidad/kilo)")
+    if cantidad != "unidad":
         print("Indique una cantidad valida")
     else:
         print("Bien")
