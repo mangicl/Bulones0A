@@ -44,38 +44,38 @@ cantidad = "unidad", "kilo"
 
 
 while True:
-    diametro = input("Indique el diametro")
+    diametro = input("Ingrese el diametro")
     if diametro != "6":
-        print("Indique un diametro valido")
+        print("Introduzca un diametro valido")
     else:
-        print("Bien")
+        print("Correcto")
         break
     continue
 
 while True:
-    paso = input("Indique el paso")
+    paso = input("Ingrese el paso")
     if paso != "1":
-        print("Indique un paso valido")
+        print("Introduzca un paso valido")
     else:
-        print("Bien")
+        print("Correcto")
         break
     continue
 
 while True:
-    largo = input("Indique el largo")
+    largo = input("Ingrese el largo")
     if largo != "1/4":
-        print("Indique un largo valido")
+        print("Introduzca un largo valido")
     else:
-        print("Bien")
+        print("Correcto")
         break
     continue
 
 while True:
-    rosca = input("Indique tipo de rosca")
+    rosca = input("Ingrese el tipo de rosca (izquierda/derecha)")
     if rosca != "derecha":
-        print("Indique un tipo de rosca valido")
+        print("Introduzca un tipo de rosca valido")
     else:
-        print("Bien")
+        print("Correcto")
         break
     continue
 
@@ -84,7 +84,7 @@ while True:
     if cantidad != "unidad":
         print("Indique una cantidad valida")
     else:
-        print("Bien")
+        print("Correcto")
         break
     continue
 
