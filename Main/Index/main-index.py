@@ -68,8 +68,11 @@ cuentaKilosTotal = cuentaKilos
 #print("usted a ingresado: " + cantidad)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #def deseaComenzar ():
 
+=======
+>>>>>>> 5413ca7cc1105352dcb143c2eac3798aebbf718a
 =======
 >>>>>>> 5413ca7cc1105352dcb143c2eac3798aebbf718a
 while True:
@@ -84,12 +87,15 @@ while True:
     
     while True:
 <<<<<<< HEAD
+<<<<<<< HEAD
         diametro = input("Ingrese el diametro")
         if diametro != "6":
             print("Introduzca un diametro valido")
         else:
             print("Correcto")
 =======
+=======
+>>>>>>> 5413ca7cc1105352dcb143c2eac3798aebbf718a
         if seleccion != 5:
             print("""Seleccione el tipo de operacion:
             1) Bulones de rosca derecha
@@ -101,6 +107,7 @@ while True:
             print(" ")
             print("Rosca derecha seleccionada")
             print(" ")
+<<<<<<< HEAD
 
             while True:
                 diametro = input("Ingrese el diametro: ")
@@ -191,6 +198,60 @@ while True:
 #            break
 #        continue
 
+=======
+
+            while True:
+                diametro = input("Ingrese el diametro: ")
+                if diametro != "6":
+                    print("Introduzca un diametro valido")
+                else:
+                    print("Diametro valido")
+                    break
+                    continue
+
+            while True:
+                paso = input("Ingrese el paso: ")
+                if paso != "1":
+                    print("Introduzca un paso valido")
+                else:
+                    print("Paso valido")
+                    break
+                continue
+
+            while True:
+                largo = input("Ingrese el largo: ")
+                if largo != "1/4":
+                    print("Introduzca un largo valido")
+                else:
+                    print("Largo valido")
+                    break
+                continue
+
+
+        elif seleccion == 2:
+            print(" ")
+            print("Rosca izquierda seleccionada")
+            print(" ")
+        elif seleccion == 3:
+            print(" ")
+            print("Usted ha elegido seguir comprando")
+            print(" ")
+        elif seleccion == 4:
+            print(" ")
+            print("Usted ha salido de la compra")
+            print(" ")
+            break
+
+#    while True:
+#        rosca = input("Ingrese el tipo de rosca (izquierda/derecha)")
+#        if rosca != "derecha":
+#            print("Introduzca un tipo de rosca valido")
+#        else:
+#            print("Correcto")
+#            break
+#        continue
+
+>>>>>>> 5413ca7cc1105352dcb143c2eac3798aebbf718a
         while True:
             cantidad = input("Indique la cantidad (unidad/kilo): ")
             if cantidad != "unidad":
@@ -199,6 +260,9 @@ while True:
                 print("Correcto")
                 break
             continue
+<<<<<<< HEAD
+>>>>>>> 5413ca7cc1105352dcb143c2eac3798aebbf718a
+=======
 >>>>>>> 5413ca7cc1105352dcb143c2eac3798aebbf718a
 
 
