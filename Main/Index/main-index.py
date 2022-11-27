@@ -8,10 +8,31 @@
 #******************************************
 
 from ast import While
-from cgitb import reset
+#from cgitb import reset
 from operator import concat
 from tkinter import N, Y
 import Calendario
+import pandas as pd
+import openpyxl
+from openpyxl import load_workbook
+
+# datos = pd.read_csv("data_base.csv")
+# print(datos[[""]])
+#wb = "F:\CURSOS\Curso Python\Tabla bulones.xlsx"
+
+#datos = pd.read_excel("F:\CURSOS\Curso Python\Tabla bulones.xlsx")
+#print(datos)
+
+#datos = openpyxl.load_workbook("F:\CURSOS\Curso Python\Tabla bulones.xlsx")
+#print(datos)
+
+wb = "C:\DESARROLLO\Bulones0A\Main\Index\Tabla_bulones.xlsx"
+
+#datos = openpyxl.load_workbook("C:\DESARROLLO\Bulones0A\Main\Index\Tabla_bulones.xlsx")
+datos2 = pd.read_excel("C:\DESARROLLO\Bulones0A\Main\Index\Tabla_bulones.xlsx")
+#print(datos)
+print(datos2)
+
 
 #main - resources
 deseaComenzar = Y,N
@@ -45,7 +66,7 @@ cuentaKilosTotal = cuentaKilos
 #cantidad = input ("Indique cantidad")
 #print("usted a ingresado: " + cantidad)
 
-def deseaComenzar ():
+#def deseaComenzar ():
 
 while True:
     deseaComenzar = input("¿Desea comenzar?")
@@ -55,7 +76,7 @@ while True:
         
     while True:
         diametro = input("Ingrese el diametro")
-        if diametro != 6 or 7 or 8 or 9 or 10 or 16 or 18 or 20 or 22 or 24 or 27 or 30 or 33 or 36 or 39 or 42 or 45 or 52 or 56 or 60 or 64 or 68 or 72 or 76 or 80:
+        if diametro != "6":
             print("Introduzca un diametro valido")
         else:
             print("Correcto")
@@ -64,7 +85,7 @@ while True:
 
     while True:
         paso = input("Ingrese el paso")
-        if paso != 1 or 1.25 or 1.5 or 2 or 2.25 or 3 or 3.5 or 4 or 4.5 or 5 or 5.5 or 6:
+        if paso != "1":
             print("Introduzca un paso valido")
         else:
             print("Correcto")
@@ -73,7 +94,7 @@ while True:
 
     while True:
         largo = input("Ingrese el largo")
-        if largo != 1/4 or 1/2 or 3/4 or 1:
+        if largo != "1/4":
             print("Introduzca un largo valido")
         else:
             print("Correcto")
