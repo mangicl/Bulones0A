@@ -31,10 +31,12 @@ lista_clientes = []
 deseaComenzar = Y,N
 continuar = Y,N
 seleccion = 0
-diametro = [6, 7, 8, 9, 10, 16, 18, 20, 22, 24, 27, 30, 33, 36, 39, 42, 45, 52, 56, 60, 64, 68, 72, 76, 80]
-paso = 1, 1.25, 1.5, 2, 2.25, 3, 3.5, 4, 4.5, 5, 5.5, 6
-largo = 1/4, 1/2, 3/4, 1
-rosca = "izquierda", "derecha"
+#diametro_stock = 6, 7, 8, 9, 10, 16, 18, 20, 22, 24, 27, 30, 33, 36, 39, 42, 45, 52, 56, 60, 64, 68, 72, 76, 80
+diametro_stock = "6"
+#paso_stock = 1, 1.25, 1.5, 2, 2.25, 3, 3.5, 4, 4.5, 5, 5.5, 6
+paso_stock = "1"
+#largo_stock = 1/4, 1/2, 3/4, 1
+largo_stock = "1/4"
 cantidad1 = "unidad"
 cantidad2 = "kilo"
 
@@ -86,8 +88,8 @@ while True:
                 print(" ")
 
                 while True:
-                    diametro = input("Ingrese el diametro en milimetros: ")
-                    if diametro != "6":
+                    diametro_input = input("Ingrese el diametro en milimetros: ")
+                    if diametro_input != diametro_stock:
                         print("Introduzca un diametro valido")
                     else:
                         print("Diametro valido")
@@ -95,8 +97,8 @@ while True:
                     continue
 
                 while True:
-                    paso = input("Ingrese el paso: ")
-                    if paso != "1":
+                    paso_input = input("Ingrese el paso: ")
+                    if paso_input != paso_stock:
                         print("Introduzca un paso valido")
                     else:
                         print("Paso valido")
@@ -104,8 +106,8 @@ while True:
                     continue
 
                 while True:
-                    largo = input("Ingrese el largo en pulgadas: ")
-                    if largo != "1/4":
+                    largo_input = input("Ingrese el largo en pulgadas: ")
+                    if largo_input != largo_stock:
                         print("Introduzca un largo valido")
                     else:
                         print("Largo valido")
@@ -113,13 +115,13 @@ while True:
                     continue
 
                 while True:
-                    cantidad = input("Indique la cantidad (unidad/kilo)")
-                    if cantidad != cantidad1:
+                    cantidad_input = input("Indique la cantidad (unidad/kilo)")
+                    if cantidad_input != cantidad1:
                         print("Indique una cantidad valida")
                     else:
                         print("Correcto")
                         break    
-                    if cantidad != cantidad2:
+                    if cantidad_input != cantidad2:
                         print("Indique una cantidad valida")
                     else:
                         print("Correcto")    
@@ -132,8 +134,8 @@ while True:
                 print(" ")
 
                 while True:
-                    diametro = input("Ingrese el diametro en milimetros: ")
-                    if diametro != "6":
+                    diametro_input = input("Ingrese el diametro en milimetros: ")
+                    if diametro_input != "6":
                         print("Introduzca un diametro valido")
                     else:
                         print("Diametro valido")
@@ -141,7 +143,7 @@ while True:
                     continue
 
                 while True:
-                    paso = input("Ingrese el paso: ")
+                    paso_input = input("Ingrese el paso: ")
                     if paso != "1":
                         print("Introduzca un paso valido")
                     else:
@@ -150,7 +152,7 @@ while True:
                     continue
 
                 while True:
-                    largo = input("Ingrese el largo en pulgadas: ")
+                    largo_input = input("Ingrese el largo en pulgadas: ")
                     if largo != "1/4":
                         print("Introduzca un largo valido")
                     else:
@@ -159,13 +161,13 @@ while True:
                     continue
 
                 while True:
-                    cantidad = input("Indique la cantidad (unidad/kilo)")
-                    if cantidad != cantidad1:
+                    cantidad_input = input("Indique la cantidad (unidad/kilo)")
+                    if cantidad_input != cantidad1:
                         print("Indique una cantidad valida")
                     else:
                         print("Correcto")
                         break    
-                    if cantidad != cantidad2:
+                    if cantidad_input != cantidad2:
                         print("Indique una cantidad valida")
                     else:
                         print("Correcto")    
