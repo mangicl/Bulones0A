@@ -41,10 +41,11 @@ cantidad1 = "unidad"
 cantidad2 = "kilo"
 
 #Variable de contabilidad
-cuentaCantidad = 0
-cuentaCantidadTotal = cuentaCantidad
+cuentaUnidad = 0
+cuentaUnidadTotal = cuentaUnidad
 cuentaKilos = 0
 cuentaKilosTotal = cuentaKilos
+cuentaCantidadTotal = cuentaUnidadTotal + (cuentaKilosTotal * 100000)
 
 #index
 
@@ -115,7 +116,7 @@ while True:
                     continue
 
                 while True:
-                    cantidad_input = input("Indique la cantidad (unidad/kilo)")
+                    cantidad_input = input("Indique si compra por UNIDAD o por KILO): ")
                     if cantidad_input != cantidad1:
                         print("Indique una cantidad valida")
                     else:
@@ -161,7 +162,7 @@ while True:
                     continue
 
                 while True:
-                    cantidad_input = input("Indique la cantidad (unidad/kilo)")
+                    cantidad_input = input("Indique si compra por UNIDAD o por KILO): ")
                     if cantidad_input != cantidad1:
                         print("Indique una cantidad valida")
                     else:
@@ -170,7 +171,7 @@ while True:
                     if cantidad_input != cantidad2:
                         print("Indique una cantidad valida")
                     else:
-                        print("Correcto")    
+                        print("Indique a continuación cuantos kilos quiere comprar")    
                         break
                     continue
 
