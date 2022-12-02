@@ -1,11 +1,11 @@
-#******************************************
-# Primer commit main app-prueba
-# subir a Github
-# index
+#*********************************************************
+# Primer commit main app-prueba / Programa: Bulones0A
+# *Subir a Github
+# *Index.py
 # ejecutable.exe
 # release: 31/10/2022
 # Developer: H. Leandro Mangicavalli
-#******************************************
+#*********************************************************
 
 from ast import While
 #from cgitb import reset
@@ -29,7 +29,7 @@ lista_clientes = []
 
 #main - resources
 deseaComenzar = Y,N
-continuar = Y,N
+deseaContinuar = Y,N
 seleccion = 0
 #diametro_stock = 6, 7, 8, 9, 10, 16, 18, 20, 22, 24, 27, 30, 33, 36, 39, 42, 45, 52, 56, 60, 64, 68, 72, 76, 80
 diametro_stock = 0
@@ -44,37 +44,20 @@ unidad2 = "kilo"
 
 #Variable de contabilidad
 cantUnidad = 0
-cantKilos = 0
 cuentaUnidad = 0
-cuentaUnidadTotal = (cuentaUnidad + cantUnidad)
+cantKilos = 0
 cuentaKilos = 0
-cuentaKilosTotal = (cuentaKilos + cantKilos)
-cuentaCantidadTotal = cuentaUnidadTotal + (cuentaKilosTotal * 100000)
-
-#index
-
-#diametro = input ("Indique diametro")
-#print("usted a ingresado: " + diametro)
-
-#paso = input ("Indique paso")
-#print("usted a ingresado: " + paso)
-
-#largo = input ("Indique largo")
-#print("usted a ingresado: " + largo)
-
-#rosca = input ("Indique rosca")
-#print("usted a ingresado: " + rosca)
-
-#cantidad = input ("Indique cantidad")
-#print("usted a ingresado: " + cantidad)
 
 while True:
-    deseaComenzar = input("¿Desea comenzar/continuar? (Y para SI / N para NO)")
+    deseaComenzar = input("¿Desea comenzar/continuar? (Y para SI / N para NO): ")
     if deseaComenzar == Y:
-        print("Ingrese las datos a continuación:")
+        print("")
+        print("Ingrese las datos a continuación: ")
+        print("")
     elif deseaComenzar == N:
         print("")
-        print("Hasta pronto")
+        print("¡Muchas gracias por su compra!")
+        print("   Que tenga un buen día.   ")
         print("")
         break
     
@@ -106,6 +89,8 @@ while True:
                 print(" ")
                 print("Comencemos a ingresar los datos del bulon...")
                 print(" ")
+                cantUnidad = 0
+                cantKilos = 0
 
                 while True:
                     diametro_input = int(input("Ingrese el diametro en milimetros: "))
@@ -162,24 +147,24 @@ while True:
                     if unidad_input == unidad2:    
                         print(f"Usted ha elegido {cantKilos}Kg de bulones con diametro: {diametro_input}mm / paso: {paso_input} / largo {largo_input} de pulgada / rosca {rosca_input}")
                         break
+
                 while True:
-                    deseaContinuar = input("Confirmar si es correcto (Y para SI / N para NO)")
+                    deseaContinuar = input("Confirmar si es correcto (Y para SI / N para NO): ")
                     if deseaContinuar == Y:
-                        cantUnidad = cuentaUnidad
-                        cantKilos = cuentaKilos
+                        cuentaUnidad += cantUnidad
+                        cuentaKilos += cantKilos
                         print("Excelente")
                         break    
                     elif deseaContinuar == N:
-                        print("Volvamos a empezar")
+                        print("¡Volvamos a empezar!")
+                        break
                     continue             
                     
             elif seleccion == 3:
                 print(f"""Usted esta comprando...
-                 Bulones por unidad: {cuentaUnidadTotal}
-                 Bulones por kilo: {cuentaKilosTotal}
-                 Cantidad total de bulones por unidad: {cuentaCantidadTotal}
+                            Bulones por unidad: {cuentaUnidad}
+                            Bulones por kilo: {cuentaKilos}
                  """)
-            
 
             elif seleccion == 4:
                 print(" ")
@@ -202,5 +187,5 @@ while True:
                 print(" ")
                 print("Ha salido de la compra con exito")
                 print(" ")
-            break
-
+                break
+            
