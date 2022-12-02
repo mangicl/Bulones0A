@@ -173,12 +173,9 @@ while True:
 
             elif seleccion == 5:
                 cantUnidad = 0
-                cantKilos = 0
                 cuentaUnidad = 0
-                cuentaUnidadTotal = 0
+                cantKilos = 0
                 cuentaKilos = 0
-                cuentaKilosTotal = 0
-                cuentaCantidadTotal = 0
                 print(" ")
                 print("Se han borrado todos los datos ingresados")
                 print(" ")
