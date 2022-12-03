@@ -18,11 +18,11 @@ from openpyxl import workbook
 from openpyxl import load_workbook
 
 # Leer el archivo
-wb = openpyxl.load_workbook("C:\DESARROLLO\Bulones0A\Main\Index\Tabla_bulones.xlsx", data_only=True)
+wb = openpyxl.load_workbook("C:\DESARROLLO\Bulones0A\Main\Index\Tabla_Bulones.xlsx", data_only=True)
 
 # Fijar la hoja
 ws1 = wb["Stock"]
-celdas1 = ws1["B3" : "F106"]
+celdas1 = ws1["B3" : "H106"]
 lista_bulones = []
 ws2 = wb["Clientes"]
 celdas2 = ws2["B2" : "D51"]
@@ -85,7 +85,7 @@ while True:
 #                   print([celda.value for celda in fila])
                 for bulones in lista_bulones:
                     print(f"""Bulones de diametro {bulones[0]} con paso {bulones[1]} y largo {bulones[2]} hay en stock:
-                    {bulones[3]} con rosca izquierda y {bulones[4]} con rosca derecha""")
+                    {bulones[3]} con rosca derecha y {bulones[5]} con rosca izquierda""")
                 break
 
             if seleccion == 2:
