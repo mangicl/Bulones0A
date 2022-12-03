@@ -19,6 +19,7 @@ from openpyxl import load_workbook
 
 # Leer el archivo
 wb = openpyxl.load_workbook("C:\DESARROLLO\Bulones0A\Main\Index\Tabla_bulones.xlsx", data_only=True)
+#wb = openpyxl.load_workbook("https://github.com/mangicl/Bulones0A/blob/main/Main/Index/Tabla_bulones.xlsx")
 # Fijar la hoja
 ws1 = wb["Stock"]
 celdas1 = ws1["B3" : "F106"]
@@ -64,12 +65,14 @@ while True:
     while True:
         if seleccion != 6:
             print("""Seleccione el tipo de operacion:
-            1) Consultar stock disponible
-            2) Seleccionar bulon a comprar
-            3) Ver totales de la compra
-            4) Seguir comprando
-            5) Borrar datos ingresados y volver a comenzar
-            6) Salir""")
+
+                1) Consultar stock disponible
+                2) Seleccionar bulon a comprar
+                3) Ver totales de la compra
+                4) Seguir comprando
+                5) Borrar datos ingresados y volver a comenzar
+                6) Salir
+            """)
             seleccion = int(input("Elija una opcion: "))
 
             if seleccion == 1:
