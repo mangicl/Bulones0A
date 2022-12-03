@@ -19,7 +19,7 @@ from openpyxl import load_workbook
 
 # Leer el archivo
 wb = openpyxl.load_workbook("C:\DESARROLLO\Bulones0A\Main\Index\Tabla_bulones.xlsx", data_only=True)
-#wb = openpyxl.load_workbook("https://github.com/mangicl/Bulones0A/blob/main/Main/Index/Tabla_bulones.xlsx")
+
 # Fijar la hoja
 ws1 = wb["Stock"]
 celdas1 = ws1["B3" : "F106"]
